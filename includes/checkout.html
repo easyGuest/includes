@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/checkout.css" />
+    <script src="../js/checkout.js"> </script>
+		<script src="../js/modernizr.custom.js"></script>
+
+</head>
+<body>
+    
+    
+    <header>
+                    <nav id="bt-menu" class="bt-menu">
+                    <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Digital key</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Check out</a></li>
+
+                    </ul>
+                </nav>
+
+    </header>
+    <main>
+        
+<div class="site-container">
+	<div class="cc-container">
+			<div class="cc">
+				<div class="cc-front">
+					<div class="card-chip"></div>
+					<div class="card-number"></div>
+					<div class="card-expiry-label">EXPIRY DATE</div>
+					<div class="card-expiry-date"></div>
+					<div class="card-holder-label">CARD HOLDER</div>
+					<div class="card-holder"></div>
+					<div class="card-logo"></div>
+				</div>
+				<div class="cc-back">
+					<div class="card-mag-strip"></div>
+					<div class="card-sig-label">AUTHORIZED SIGNATURE</div>
+					<div class="card-sig-strip"></div>
+					<div class="card-ccv-label">CCV</div>
+					<div class="card-ccv"></div>
+					<div class="card-logo"></div>
+				</div>
+			</div>
+		</div>
+	
+	<div class="form-container float">
+		<h2>Check Out</h2>
+		<div class="divider div-small"></div>
+		<h4>Enter your credit card information below.</h4>
+		<form action="#!"	class="form-payment" method="post" novalidate>
+			<p class="style-outline">
+				<label for="card-number" class="disable-select">Card Number *</label>
+				<input required id="card-number" maxlength="19" min="0" name="card-number" pattern="^(3[4-8]|4[0-9]|5[1-5]|6[0,5])\d{2} \d{4} \d{4} \d{4}$" title="Required field" type="text" value="" />
+				<span class="invalid-msg">You can't leave this empty.</span>
+				<span class="invalid-msg">Card number format is not recognized.</span>
+			</p>
+			<p class="style-outline">
+				<label for="card-holder" class="disable-select">Card Holder *</label>
+				<input required id="card-holder" maxlength="40" name="card-holder" pattern="[A-Za-z \-']{5,}" title="Required field" type="text" value="" />
+				<span class="invalid-msg">You can't leave this empty.</span>
+				<span class="invalid-msg">A name 5 to 40 letters in length.</span>
+			</p>
+			<p class="style-outline">
+				<label for="card-expiry-date" class="disable-select">Expiration Date *</label>
+				<input required id="card-expiry-date" maxlength="5" min="0" name="card-expiry-date" pattern="^\d{2}\/\d{2}$" title="Required field" type="text" value="" />
+				<span class="invalid-msg">You can't leave this empty.</span>
+				<span class="invalid-msg">The expiration date is invalid.</span>
+			</p>
+			<p class="style-outline">
+				<label for="card-ccv" class="disable-select">CCV *</label>
+				<input required id="card-ccv" maxlength="4" min="0" name="card-ccv" pattern="\d{3,4}" title="Required field" type="text" value="" />
+				<span class="invalid-msg">You can't leave this empty.</span>
+				<span class="invalid-msg">The CCV is incomplete.</span>
+			</p>
+			<div class="divider div-small"></div>
+			<h4>* Required fields</h4>
+			<input type="submit" class="submit-next" value="Confirm Order"/>
+		</form>
+	</div>
+</div>
+        
+</main>
+</body>
+            <script src="../js/classie.js"></script>
+	<script src="../js/borderMenu.js"></script>
+</html>
